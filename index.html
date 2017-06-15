@@ -22,7 +22,7 @@
 
         <!-- Add your site or application content here -->
                      <!-- Start header -->
-    <header>
+    <header id="entete">
         <aside>
             <span>DayTech</span>
         </aside>
@@ -44,10 +44,13 @@
     </section>
 
                        <!-- Start articles section -->
-    <section class="lesarticles">
+    <section class="lesarticles row">
         
-      <section class="articles">
-            <article class="card" style="width: 20rem;">
+      <section class="articles col-12 col-md-9">
+        <section class="articlecont">
+            <h2><span class="ion-ios-grid-view-outline"></span>Nouvelles technologies</h2>
+           <div class="row">
+            <article class="card col-12 col-md-6" style="width: 20rem;">
               <img class="card-img-top" src="..." alt="">
               <div class="card-block">
                 <h4 class="card-title">Card title</h4>
@@ -65,7 +68,7 @@
                 </div>  
               </div> 
             </article>
-            <article class="card" style="width: 20rem;">
+            <article class="card col-12 col-md-6" style="width: 20rem;">
               <img class="card-img-top" src="..." alt="">
               <div class="card-block">
                 <h4 class="card-title">Card title</h4>
@@ -82,9 +85,17 @@
                   <a href="#" class="btn btn-primary"><span class="ion-social-googleplus-outline"> </span> Share</a>
                 </div>  
               </div> 
+              <a href="#">Learn More<span class="ion-android-arrow-dropright-circle"></span></a>
+                 </div> 
             </article>
+          </div>    
+               <!-- end of two articles -->
+         </section>
 
-            <article class="card" style="width: 20rem;">
+         <section class="articlecont"> 
+            <h2><span class="ion-ios-grid-view-outline"></span>Inovations/web/technologie</h2>
+           <div class="row">  
+            <article class="card col-12 col-md-6" style="width: 20rem;">
               <img class="card-img-top" src="..." alt="">
               <div class="card-block">
                 <h4 class="card-title">Card title</h4>
@@ -100,11 +111,11 @@
                   <a href="#" class="btn btn-primary"><span class="ion-social-twitter-outline"> </span>Tweet</a>
                   <a href="#" class="btn btn-primary"><span class="ion-social-googleplus-outline"> </span> Share</a>
                 </div> 
-                 <a href="#">Learn More<span></span></a>
+                 <a href="#">Learn More<span class="ion-android-arrow-dropright-circle"></span></a>
                  </div> 
             </article>
 
-          <article class="card" style="width: 20rem;">
+          <article class="card col-12 col-md-6" style="width: 20rem;">
               <img class="card-img-top" src="..." alt="">
               <div class="card-block">
                 <h4 class="card-title">Card title</h4>
@@ -121,11 +132,18 @@
                   <a href="#" class="btn btn-primary"><span class="ion-social-googleplus-outline"> </span> Share</a>
                 </div>  
               </div> 
+              <a href="#">Learn More<span class="ion-android-arrow-dropright-circle"></span></a>
+                 </div> 
             </article>
+            </div>
+               <!-- end of article -->
+         </section> 
 
 
-      </section>  
-      <aside class="le-plus-lit">
+      </section>
+
+                             <!--  start aside  -->
+      <aside class="le-plus-lit col-12 col-md-3">
         <article>
             <div class="titre">
               <h3 class="titre-aside">A propos</h3>
@@ -153,13 +171,47 @@
                 
             </div>
         </article>
-
+        <article>
+            <div class="titre">
+              <h3 class="titre-aside">Dans ce blog<span class="ion-map"></span></h3>
+                
+            </div>
+            <div class=texte-aside>
+              <ul>
+                  <li><a href="#">Nouvelles technologies</a></li>
+                  <li><a href="#">Astuces divers</a></li>
+                  <li><a href="#">Inovations/web/technologie</a></li>
+                  <li><a href="#">Astuce divers</a></li>
+              </ul>
+            </div>
+        </article>
            
           
       </aside>
    
         
     </section>
+                     <!-- End  articles section -->
+
+                     <!--================Star footer================-->
+                     <!-- ========================================== -->
+
+   <footer>
+       <div class="reseau">
+            <ul> 
+                <li><a href="#"><span class="ion-social-facebook"></span></a></li>
+                <li><a href="#"><span class="ion-social-twitter"></span></a></li>
+                <li><a href="#"><span class="ion-social-googleplus"></span></a></li>
+             </ul>  
+       </div>
+       <div>
+           <p>Infos sur le site Daytech ©2017 Le contenu de ce blog est protégé par les lois en vigueur sur la propriété intellectuelle et n'est pas libre de droits.. Consulter les mentions légales</p>
+       </div>
+       <div class="haut">
+           <a href="#entete"> <span class="ion-android-navigate"></span></a>
+       </div>
+
+   </footer>
 
 
 
@@ -181,5 +233,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+         <script src="js/bootstrap.min.js"></script>
+
     </body>
 </html>
