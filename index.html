@@ -6,12 +6,15 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Damion|Jura|Mogra|Press+Start+2P|Slackey" rel="stylesheet">
+
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+       
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -22,14 +25,15 @@
 
         <!-- Add your site or application content here -->
                      <!-- Start header -->
+                   
     <header id="entete">
-        <aside>
-            <span>DayTech</span>
+        <aside class="logoblog">
+            <span class="logo">DayTech</span>
         </aside>
-        <nav>
+        <nav class="menulaptop hidden-md-down">
            <ul>
                 <li><a href="#acuiell">Acuiel</a></li>
-                <li><a href="#apropos">Apropos</a></li>
+                <li><a href="#apropos">A propos</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#"><span class="ion-social-facebook"></span></a></li>
                 <li><a href="#"><span class="ion-social-twitter"></span></a></li>
@@ -37,12 +41,23 @@
                
             </ul> 
         </nav>
+        <nav class="menumobile hidden-md-up">
+          <button class="menubouton" onclick="affichmenudrop()">Menu</button> 
+          <ul id="meunudropdown" class="menudrop"">
+              <li><a href="#">Accuiel</a></li>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+
+        </nav>
+
     </header>
+   
                        <!-- start slider section -->
-    <section class="slidsection">
+   <!--  <section class="slidsection hidden-md-down">
         
     </section>
-
+ -->
                        <!-- Start articles section -->
     <section class="lesarticles row">
         
@@ -50,11 +65,11 @@
         <section class="articlecont">
             <h2><span class="ion-ios-grid-view-outline"></span>Nouvelles technologies</h2>
            <div class="row">
-            <article class="card col-12 col-md-6" style="width: 20rem;">
-              <img class="card-img-top" src="..." alt="">
+            <article class="card col-12 col-md-6">
+              <img class="card-img-top img-fluid" src="img/starup.jpg" alt="startupupdeviolet" onmouseover="affichalt(this)" onmouseout="cacheralt(this)">
               <div class="card-block">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">Some quick example text to build on the card title and  make up the bulk of the card's content.</p>
+                <h4 class="card-title">Start-Up-Deviolet</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, saepe optio deleniti quisquam earum ducimus numquam, culpa exercitationem, debitis blanditiis veniam odit vitae laudantium, quasi nam modi! Libero, tempore, quibusdam.</p>
                 <div class="">
                    <p id="date"> <span class="ion-ios-clock-outline"></span></p>
                    <p><span class="ion-ios-personadd"></span></p>
@@ -68,10 +83,10 @@
                 </div>  
               </div> 
             </article>
-            <article class="card col-12 col-md-6" style="width: 20rem;">
-              <img class="card-img-top" src="..." alt="">
+            <article class="card col-12 col-md-6" >
+              <img class="card-img-top img-fluid" src="img/impression3d.jpg" alt="imprimente-3d" onmouseover="affichalt()" onmouseout="cacheralt()">
               <div class="card-block">
-                <h4 class="card-title">Card title</h4>
+                <h4 class="card-title">Impression 3D</h4>
                 <p class="card-text">Some quick example text to build on the card title and  make up the bulk of the card's content.</p>
                 <div class="">
                    <p id="date"> <span class="ion-ios-clock-outline"></span></p>
@@ -95,11 +110,11 @@
          <section class="articlecont"> 
             <h2><span class="ion-ios-grid-view-outline"></span>Inovations/web/technologie</h2>
            <div class="row">  
-            <article class="card col-12 col-md-6" style="width: 20rem;">
-              <img class="card-img-top" src="..." alt="">
+            <article class="card col-12 col-md-6">
+              <img class="card-img-top img-fluid" src="img/besttechnologie.jpg" alt="besttechnologie">
               <div class="card-block">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">Some quick example text to build on the card title and  make up the bulk of the card's content.</p>
+                <h4 class="card-title">Best Technologie</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, maxime saepe excepturi illum debitis repellendus, quo. Eveniet corrupti excepturi molestias asperiores, ullam iste incidunt, dolores ipsam esse iure ducimus officia!</p>
                 <div class="">
                    <p id="date"> <span class="ion-ios-clock-outline"></span></p>
                    <p><span class="ion-ios-personadd"></span></p>
@@ -115,11 +130,11 @@
                  </div> 
             </article>
 
-          <article class="card col-12 col-md-6" style="width: 20rem;">
-              <img class="card-img-top" src="..." alt="">
+          <article class="card col-12 col-md-6">
+              <img class="card-img-top img-fluid" src="img/innovatsuisse.jpg" alt="jeuxmicrosoft">
               <div class="card-block">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">Some quick example text to build on the card title and  make up the bulk of the card's content.</p>
+                <h4 class="card-title">Innovation-Suisse </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolore corporis, recusandae voluptas, neque expedita atque vitae tenetur, iusto exercitationem voluptatem explicabo porro magnam, labore ab consequuntur nihil dolores a.</p>
                 <div class="">
                    <p id="date"> <span class="ion-ios-clock-outline"></span></p>
                    <p><span class="ion-ios-personadd"></span></p>
@@ -197,20 +212,21 @@
                      <!-- ========================================== -->
 
    <footer>
-       <div class="reseau">
+      <div class="row">
+       <div class="reseau col-12 col-md-4">
             <ul> 
                 <li><a href="#"><span class="ion-social-facebook"></span></a></li>
                 <li><a href="#"><span class="ion-social-twitter"></span></a></li>
                 <li><a href="#"><span class="ion-social-googleplus"></span></a></li>
              </ul>  
        </div>
-       <div>
+       <div class="texte col-12 col-md-4">
            <p>Infos sur le site Daytech ©2017 Le contenu de ce blog est protégé par les lois en vigueur sur la propriété intellectuelle et n'est pas libre de droits.. Consulter les mentions légales</p>
        </div>
-       <div class="haut">
+       <div class="haut col-12 col-md-4">
            <a href="#entete"> <span class="ion-android-navigate"></span></a>
        </div>
-
+    </div>
    </footer>
 
 

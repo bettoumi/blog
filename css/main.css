@@ -92,20 +92,149 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+                   Start my  CSS
    ========================================================================== */
 
+   
+         /*=================== header css=========================*/
+ 
+  #entete
+  {
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #001011;
+    color: white;
+  }
+  #entete .logoblog
+  {
+    margin: auto;
+
+   }
+   #entete .logoblog .logo
+   {
+     font-family: 'Press Start 2P', cursive;
+     font-size: 3em;
+   }
+            /* style nav for mobile*/
+
+   .menumobile
+   {
+    margin: auto;
+   
+   }
+
+   .menumobile .menudrop
+    {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding-bottom: 50px;
+        display:none;
+
+    }
+    .menumobile .menudrop li a
+    {
+        text-decoration: none;
+        color: #f17105;
+        font-size: 19px;
+        font-family: 'Jura', sans-serif;
+        transition: all 2s ;
+        font-weight: bold;
+    }
+    .menumobile .menudrop li a:hover
+    {
+       color:white;
+       text-decoration: underline;
+     }   
+    .menubouton
+    {
+        color:#f17105;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        font-family: 'Jura', sans-serif;
+        font-size: 23px;
+        margin-bottom: 30px;
+        margin-top:30px;
+
+    }
+    .menumobile li+li:before 
+    {
+        padding: 5px;
+        color:#f17105;
+        content: "/\00a0";
+   } 
+
+     /*=================== style les articles section =========================*/
+
+  .lesarticles
+  {
+    
+  }
+
+  .articles 
+  {
+     background-color:#001011;
+     color: green;
+
+
+  }
+ .articles .articlecont h2
+  {
+    font-size: 25px;
+    font-family: 'Jura', sans-serif;
+    color:#ffa552;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+
+   }
+    .lesarticles .articles .articlecont
+    {
+        width: 95%;
+        margin: auto;
+        padding-top: 50px;
+    }
+   .lesarticles .articles .articlecont .card
+  {
+     
+     background-color:#001011;
+     border:none; 
+     color:white;
+     padding-top: 50px;
+  }
+  .lesarticles .articles .articlecont .card .card-img-top
+  {
+     height: 300px;
+  }
+
+
+  /* ==========================================================================
+                      CSS FOR TABLET
+   ========================================================================== */
+  
+@media (min-width: 720px)
+{
+
+}
+
+                      
+                      
+ /* ==========================================================================
+                      CSS FOR DESKTOP
+   ========================================================================== */
+ @media (min-width: 1200px)
+{
+   #entete .logoblog .logo
+   {
+     
+     font-size: 7em;
+   }
 
 
 
-
-
-
-
-
-
-
-
+} 
 
 
 
