@@ -197,17 +197,19 @@ textarea {
         padding-top: 50px;
     }
    .lesarticles .articles .articlecont .card
-  {
+   {
      
      background-color:#001011;
      border:none; 
      color:white;
      padding-top: 50px;
-  }
+
+   }
   .lesarticles .articles .articlecont .card .card-img-top
   {
      height: 300px;
   }
+
 
 
   /* ==========================================================================
