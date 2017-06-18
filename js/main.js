@@ -1,3 +1,6 @@
+
+  // =============Menu mobile============
+  // ====================================
 function affichmenudrop()
 {
   var m= document.getElementById("meunudropdown");
@@ -10,36 +13,41 @@ function affichmenudrop()
   }
   
 }
-// img.onmouseover = function(){affichalt(this)};
-// img.onmouseover = function(){cacheralt(this)};
-function affichalt(x)
-{
 
-      
-      var z = document.getElementsByClassName("alttexte");
-      var c= document.getElementsByClassName("entet-card");
-      for(i=0; i<c.length;i++)
-      {
-         c[i].style.position="relative";
-      }
-      for(i=0; i<z.length;i++)
-      {
-          z[i].innerHTML =x.alt;
-         z[i].style.position="absolute";
-      // z.style.border="1px solid red";
-         z[i].style.textAlign="center";
-         z[i].style.paddingTop="20px";
-         z[i].style.color="#ffa552";
-         z[i].style.width="200px";
-         z[i].style.height="80px";
-         z[i].style.backgroundColor="rgba(0,0,0,0.30)";
-         z[i].style.top="30%";
-         z[i].style.left="30%";  
-      }   
-     
+// =============Alt image============
+// ==================================
+function affichalt(img)
+{
     
+      
+       var alttexte = document.createElement("div");
+       img.parentNode.insertBefore(alttexte, img);
+        alttexte.innerHTML = img.alt;
+         img.parentNode.style.position="relative";
+        alttexte.style.position="absolute";
+         // alttexte.style.border="1px solid red";
+          alttexte.style.textAlign="center";
+         alttexte.style.paddingTop="20px";
+       alttexte.style.color="#ffa552";
+      alttexte.style.width="200px";
+       alttexte.style.height="80px";
+      alttexte.style.backgroundColor="rgba(0,0,0,0.30)";
+       alttexte.style.top="30%";
+      alttexte.style.left="30%"
+
 }
-// function cacheralt(x)
-// {
-//    document.getElementById("alttexte").style.display="none"; 
-//  }
+ function cacheralt(img)
+{
+  var altexte= img.parentNode.firstChild;
+  altexte.parentNode.removeChild(altexte);
+
+}
+
+// =============Display Date============
+// ==================================
+ var d= new Date();
+ var  alldate=document.getElementsByClasseName("affichdate");
+  for(i=0; i<alldate.length;i++)
+  {
+    alldate[i].innerHTML = d.toUTCString();
+  }
