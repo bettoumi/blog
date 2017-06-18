@@ -31,13 +31,13 @@
             <span class="logo">DayTech</span>
         </aside>
         <nav class="menulaptop hidden-md-down">
-           <ul>
-                <li><a href="#acuiell">Acuiel</a></li>
-                <li><a href="#apropos">A propos</a></li>
+           <ul id="menulap">
+                <li><a href="#acuiell">Accuiel</a></li>
+                <li><a href="#apropos">Nouvelles-techno</a></li>
+                <li><a href="#apropos">Innovations/web</a></li>
+                <li><a href="#apropos">Outils&Astuces</a></li>
+
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#"><span class="ion-social-facebook"></span></a></li>
-                <li><a href="#"><span class="ion-social-twitter"></span></a></li>
-                <li><a href="#"><span class="ion-social-googleplus"></span></a></li>
                
             </ul> 
         </nav>
@@ -125,7 +125,7 @@
                   <!-- end of first section of article -->
 
          <section class="articlecont"> 
-            <h2><span class="ion-ios-grid-view-outline"></span>Inovations/web/technologie</h2>
+            <h2><span class="ion-ios-grid-view-outline"></span>Innovations/web</h2>
            <div class="row">  
             <article class="card col-12 col-md-6">
               <div class="entet-card">
@@ -252,20 +252,28 @@
 
                              <!--  start aside  -->
       <aside class="le-plus-lit col-12 col-md-3">
-        <article>
+        <article class="aside-article">
+             <!--  <div class="media">
+                 
+                  <div class="media-body">
+                     <h5 class="mt-0">A propos</h5>
+                     Passionné de nouvelles technologies, je vous fais découvrir des innovations technologiques qui impactent notre quotidien, ainsi que des astuces & outils pour simplifier notre vie.
+                </div>
+              </div> -->
             <div class="titre">
-              <h3 class="titre-aside">A propos</h3>
+                <div class="titre-aside">
+                 <h3>A propos</h3>
+                </div>
+              <img class="img-apropos" src="img/touche.gif" alt="image_animé" style>
+              Passionné de nouvelles technologies, je vous fais découvrir des innovations technologiques qui impactent notre quotidien, ainsi que des astuces & outils pour simplifier notre vie.
+              
             
             </div>
-            <div class=texte-aside>
-              <p>Passionné de nouvelles technologies, je vous fais découvrir des innovations technologiques qui impactent notre quotidien, ainsi que des astuces & outils pour simplifier notre vie.
-              </p>
-                
-            </div>
+            
         </article>
-        <article>
-            <div class="titre">
-              <h3 class="titre-aside">Recevez des new lettres</h3>
+        <article class="aside-article">
+            <div class="titre-aside">
+              <h3 >News lettres</h3>
                 
             </div>
             <div class=texte-aside>
@@ -274,22 +282,22 @@
                 <label for="exampleInputEmail1">EMAIL*</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                </div>
-               <button type="submit" class="btn btn-primary">Je M'ABONNE!</button>
+               <button type="submit" class="btn">JE M'ABONNE!</button>
               </form>
                 
             </div>
         </article>
-        <article>
-            <div class="titre">
-              <h3 class="titre-aside">Dans ce blog<span class="ion-map"></span></h3>
+        <article class="aside-article">
+            <div class="titre-aside">
+              <h3>Dans ce blog</h3>
                 
             </div>
             <div class=texte-aside>
-              <ul>
+              <ul class="blog-list">
                   <li><a href="#">Nouvelles technologies</a></li>
-                  <li><a href="#">Astuces divers</a></li>
                   <li><a href="#">Inovations/web/technologie</a></li>
-                  <li><a href="#">Astuce divers</a></li>
+                  <li><a href="#">Astuce divers</a></li> 
+                  <li><a href="#">Contact</a></li>
               </ul>
             </div>
         </article>
@@ -305,19 +313,19 @@
                      <!-- ========================================== -->
 
    <footer>
-      <div class="row">
-       <div class="reseau col-12 col-md-4">
-            <ul> 
+      <div class="row align-items-center justify-content-center">
+       <div class="reseau col-12 col-md-3">
+            <ul class="reseau-footer align-s"> 
                 <li><a href="#"><span class="ion-social-facebook"></span></a></li>
                 <li><a href="#"><span class="ion-social-twitter"></span></a></li>
                 <li><a href="#"><span class="ion-social-googleplus"></span></a></li>
              </ul>  
        </div>
-       <div class="texte col-12 col-md-4">
+       <div class="texte-footer col-12 col-md-6">
            <p>Infos sur le site Daytech ©2017 Le contenu de ce blog est protégé par les lois en vigueur sur la propriété intellectuelle et n'est pas libre de droits.. Consulter les mentions légales</p>
        </div>
-       <div class="haut col-12 col-md-4">
-           <a href="#entete"> <span class="ion-android-navigate"></span></a>
+       <div class="haut-page align-self-center col-12 col-md-3">
+           <a href="#entete" class="haut"> <span class="ion-android-navigate icon"></span></a>
        </div>
     </div>
    </footer>
