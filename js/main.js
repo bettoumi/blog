@@ -46,7 +46,7 @@ function affichalt(img)
 // =============Display Date============
 // ==================================
  var d= new Date();
- var  alldate=document.getElementsByClasseName("affichdate");
+ var  alldate=document.getElementsByClassName("affichdate");
   for(i=0; i<alldate.length;i++)
   {
     alldate[i].innerHTML = d.toUTCString();
