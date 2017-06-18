@@ -95,9 +95,19 @@ textarea {
                    Start my  CSS
    ========================================================================== */
 
+   body
+   {
+    background-color:#001011; 
+   }
    
+
+
+
          /*=================== header css=========================*/
  
+
+
+
   #entete
   {
     text-align: center;
@@ -196,6 +206,12 @@ textarea {
         margin: auto;
         padding-top: 50px;
     }
+
+    .lesarticles .articles .articlecont .card , .le-plus-lit
+    {
+       background-color:#001011; 
+    }
+
    .lesarticles .articles .articlecont .card
    {
      
@@ -208,6 +224,7 @@ textarea {
   .lesarticles .articles .articlecont .card .card-img-top
   {
      height: 300px;
+     width: 450px;
   }
 
 
@@ -264,6 +281,16 @@ textarea {
     font-size:20px;
   }
 
+     /*=================== style Aside =========================*/
+       
+
+   .le-plus-lit 
+   {
+     color: white;
+     box-shadow: 0 4px 10px 0 rgba(255,165,82,0.2),0 4px 20px 0 rgba(255,165,82,0.19);
+     padding-right: 20px;
+     padding-top: 30px;
+   }         
 
 
   /* ==========================================================================
