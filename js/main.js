@@ -38,7 +38,7 @@ function affichalt(img)
 }
  function cacheralt(img)
 {
-  var altexte= img.parentNode.firstChild;
+  var altexte= img.parentNode.firstElementChild;
   altexte.parentNode.removeChild(altexte);
 
 }
@@ -55,14 +55,20 @@ function affichalt(img)
 // =============Display time============
 // =====================================
 
- if(document.redyState===complete)
- {
-   var d= new Date();
-   var debut=d.getTime();
- }
- if (myWindow.closed) 
- {
-   var fin=d.getTime();
- }
- var temp=fin-debut;
- document.getElementById("temp").innerHTML=temp;
+  
+   
+var c = 0;
+var t;
+
+
+function timedCount() {
+    document.getElementById("tp").innerHTML = c;
+    c = c + 1;
+    t = setTimeout(function(){ timedCount() }, 1000);
+}
+
+
+
+  
+   
+ 
