@@ -57,17 +57,27 @@ function affichalt(img)
 
   
    
-var c = 0;
+var s = 0;
 var t;
 
-
-function timedCount() {
-    document.getElementById("tp").innerHTML = c;
-    c = c + 1;
-    t = setTimeout(function(){ timedCount() }, 1000);
+function compter() {
+      var te=new Date();
+     te.setTime(s*1000);
+   var  h= te.getHours();
+   var m=te.getMinutes();
+    var se=te.getSeconds();
+    document.getElementById("tp").innerHTML = h +" h"+ " : "+ m + " m"+ ":"+ se +" s";                                       +s;
+    s = s+ 1;
+    t = setTimeout(function(){ compter() }, 1000);
 }
+compter();
 
-
+// =============Confirmer form============
+// =====================================
+function confirmer()
+{
+  confirm("voulez-vous envoyer?");
+}
 
   
    
