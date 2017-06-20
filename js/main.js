@@ -51,3 +51,18 @@ function affichalt(img)
   {
     alldate[i].innerHTML = d.toUTCString();
   }
+
+// =============Display time============
+// =====================================
+
+ if(document.redyState===complete)
+ {
+   var d= new Date();
+   var debut=d.getTime();
+ }
+ if (myWindow.closed) 
+ {
+   var fin=d.getTime();
+ }
+ var temp=fin-debut;
+ document.getElementById("temp").innerHTML=temp;

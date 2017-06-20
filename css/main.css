@@ -255,13 +255,13 @@ textarea {
        font-size: 18px;
 
     } 
-    .partage .btn,.learn
+    .partage .btn,.learn 
     {
       color:rgb(255,165,82); 
       letter-spacing: 0.14em; 
     }
 
-   .partage .btn
+   .partage .btn, .contact .formulaire .btn
    {
     font-size: 14px;
     font-family: monospace;
@@ -333,10 +333,13 @@ textarea {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .texte-aside .btn
+  .texte-aside .btn, .contact .formulaire .btn
   {
     background-color: rgb(255,165,82);
     font-weight: bold;
+    font-family: 'Jura', sans-serif;
+    letter-spacing: 0.20em;
+
   }
   .blog-list
   {
