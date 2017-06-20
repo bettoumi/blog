@@ -117,12 +117,13 @@ textarea {
     width: 100%;
     background-color: #001011;
     color: white;
+    padding-left: 20px;
+    text-align: center;
   }
   #entete .logoblog
   {
     margin: auto;
-
-   }
+  }
    #entete .logoblog .logo
    {
      font-family: 'Press Start 2P', cursive;
@@ -132,54 +133,69 @@ textarea {
 
    .menumobile
    {
-    margin: auto;
+     margin: auto;
+     text-align: center;
    
    }
 
    .menumobile .menudrop
     {
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
+        align-items: center;
         list-style-type: none;
         padding-bottom: 50px;
         display:none;
+       
 
+    }
+    .menumobile .menudrop li
+    {
+        margin-bottom: 10px;
     }
     .menumobile .menudrop li a
     {
         text-decoration: none;
-        color: #f17105;
+        padding-bottom: 10px;
+        color: white;
         font-size: 19px;
         font-family: 'Jura', sans-serif;
         transition: all 2s ;
         font-weight: bold;
+        background: url('../img/trait-gris-degrade.png') no-repeat;
+        background-size:contain;
+        background-position: bottom;
+
     }
     .menumobile .menudrop li a:hover
     {
-       color:white;
-       text-decoration: underline;
+       color: #686868; 
      }   
     .menubouton
     {
-        color:#f17105;
+        color:#001011;
         font-weight: bold;
         letter-spacing: 0.2em;
         font-family: 'Jura', sans-serif;
         font-size: 23px;
         margin-bottom: 30px;
         margin-top:30px;
+        margin-left: 20px;
+    }
+    .menubouton:hover
+    {
 
     }
-    .menumobile li+li:before 
-    {
-        padding: 5px;
-        color:#f17105;
-        content: "/\00a0";
-   } 
 
+    
      /*=================== style les articles section =========================*/
 
-  .articles, .le-plus-lit 
+  .lesarticles
+  {
+    margin-left: 10px;
+  }
+  .articles, .le-plus-lit, .labelform 
   {
     font-family: 'Jura', sans-serif;
   }
@@ -187,7 +203,7 @@ textarea {
   .articles 
   {
      background-color:#001011;
-     color: green;
+     /*color: green;*/
 
 
   }
@@ -333,6 +349,27 @@ textarea {
       color: white;
 
   }
+
+    /*=================== style contact =========================*/
+  .contact
+  {
+   
+    padding-top: 50px;
+  }  
+  .contact .formulaire
+  {
+    width: 80%;
+     margin: auto;
+  }
+  .labelform
+  {
+    color: white;
+     
+  }
+
+
+
+
    /*=================== style footer =========================*/
    footer
    {
@@ -374,12 +411,61 @@ textarea {
 
   }
 
+
+
+
+
+
   /* ==========================================================================
                       CSS FOR TABLET
    ========================================================================== */
   
 @media (min-width: 720px)
 {
+
+  .menulaptop
+{
+   margin: auto;
+
+}
+
+ .menulaptop #menulap
+
+ {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: : center;
+    
+ }
+
+ .menulaptop #menulap li
+ {
+     border-right: 1px solid white;
+     padding: 10px 20px;
+ }
+ .menulaptop #menulap #dernierlist
+ {
+    border-right: transparent;
+ }
+ .menulaptop #menulap li a
+ {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Jura', sans-serif;
+    transition: all 0.5s;
+    letter-spacing: 1.2px;
+    
+ }
+ .menulaptop #menulap li a:hover
+ {
+   color: #686868;
+ }
+
+
+
 
 }
 
@@ -394,24 +480,8 @@ textarea {
    {
      
      font-size: 7em;
+
    }
-
- .menulaptop #menulap
-
- {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-
- }
- .menulaptop #menulap li a
- {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: 'Jura', sans-serif;
- }
 
 } 
 
