@@ -28,8 +28,9 @@ function affichalt(img)
          // alttexte.style.border="1px solid red";
           alttexte.style.textAlign="center";
          alttexte.style.paddingTop="20px";
-       alttexte.style.color="#ffa552";
-      alttexte.style.width="200px";
+       alttexte.style.color="#fff992";
+       alttexte.style.fontWeight="bold";
+       alttexte.style.width="200px";
        alttexte.style.height="80px";
       alttexte.style.backgroundColor="rgba(0,0,0,0.30)";
        alttexte.style.top="30%";
@@ -78,6 +79,29 @@ function confirmer()
 {
   confirm("voulez-vous envoyer?");
 }
+
+// =============tabs============
+// =====================================
+
+ function affich(iden)
+{
+   var i;
+   var tabcontenu;
+   var cliquebtn;
+   tabcontenu=document.getElementsByClassName("tabcontenu");
+   // cliquebtn=document.getElementsByClassName("cliquebtn");
+   for (var i = 0; i < tabcontenu.length; i++) {
+      if (tabcontenu[i].classList.contains("active")) 
+      {
+       tabcontenu[i].classList.remove("active");
+     }  
+     
+   }   
+   document.getElementById(iden).classList.add('active');
+
+}
+
+
 
   
    

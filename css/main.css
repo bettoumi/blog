@@ -195,7 +195,7 @@ textarea {
   {
     margin-left: 10px;
   }
-  .articles, .le-plus-lit, .labelform 
+  .articles, .le-plus-lit, .labelform, .tab-content, .lecontenu 
   {
     font-family: 'Jura', sans-serif;
   }
@@ -272,7 +272,7 @@ textarea {
    {
      background-color:  #c4d6b0;
    }
-   .partage .btn:hover  
+   .partage .btn:hover,.nav-link:hover  
    {
      color: #001011;
    }
@@ -307,7 +307,7 @@ textarea {
      padding-left: 20px;
      padding-right: 10px;
      padding-top: 30px;
-     
+
    } 
  .aside-article
  {
@@ -333,7 +333,7 @@ textarea {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .texte-aside .btn, .contact .formulaire .btn
+  .texte-aside .btn, .contact .formulaire .btn, .nav-link, .natab .btn
   {
     background-color: rgb(255,165,82);
     font-weight: bold;
@@ -361,6 +361,7 @@ textarea {
   #tp
   {
     font-size: 18px;
+
   }
 
     /*=================== style contact =========================*/
@@ -371,7 +372,7 @@ textarea {
   }  
   .contact .formulaire
   {
-    width: 80%;
+    width: 85%;
      margin: auto;
   }
   .labelform
@@ -380,6 +381,37 @@ textarea {
      
   }
 
+
+    /*=================== style tabs =========================*/
+  .tabs
+ {
+    width: 85%;
+    margin: auto;
+    padding-top: 50px; 
+ }
+.lecontenu
+{
+   padding: 20px;
+   color: white; 
+}
+ .tabcontenu 
+ {
+    margin-bottom: 20px;
+    display: none;
+ }
+ #reston
+ {
+    color: #324a5f;
+ }
+ #tech
+ {
+   color: #683257;
+ }
+ 
+ .active
+ {
+    display: block;
+ }
 
 
 
