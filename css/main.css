@@ -494,8 +494,10 @@ textarea {
 
  .menulaptop #menulap li
  {
-     border-right: 1px solid white;
-     padding: 10px 20px;
+    background: url('../img/trait-gris-degrade.png') no-repeat;
+    background-size:contain;
+    background-position: bottom;
+    padding: 10px 20px;
  }
  .menulaptop #menulap #dernierlist
  {
