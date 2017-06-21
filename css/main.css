@@ -416,6 +416,7 @@ textarea {
 
 
    /*=================== style footer =========================*/
+
    footer
    {
     margin-top: 50px;
@@ -455,10 +456,17 @@ textarea {
     padding: 15px; 
 
   }
-
-
-
-
+ 
+    /*=================== style for tartup page =========================*/
+   #sartupart
+   {
+    width: 100%;
+   }
+  
+  .img-fluid
+  {
+    margin: 0 auto;
+  }
 
 
   /* ==========================================================================
@@ -510,6 +518,11 @@ textarea {
  }
 
 
+
+.lesarticles .articles .articlecont .card .card-img-top
+  {
+     width: 600px;
+  }
 
 
 }
